@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 400px;
+    background-color:black;
+    color: white;
+    padding: 30PX;
+    /* border-radius: 10px; */
+}
+
+.navme {
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    outline: 2px solid greenyellow;
+    margin-top: 20px;
+}
+
+.container, #container{
+    width: 800px;
+    padding: 40px;
+    margin: 50px auto;
+    background-color: rgba(127, 255, 212, 0.393);
+
+}
+
+#flash{
+    width: 400px;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    font-size: 22pt;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 25px;
+}
+
+table {
+    width:100%;
+    margin: 20px auto;
+    padding: 40px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px 10px;
+    outline: 2px solid black;
+    font-size: 15pt;
+}
+
+th{
+    background-color: black;
+    color: white;
+
+    font-size: 19pt;
+}
+
+
+.sec-container{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border-radius: 25px;
+}
+
+h5{
+    color: red;
+}

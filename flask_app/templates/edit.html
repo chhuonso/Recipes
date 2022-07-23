@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes EDIT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='/css/style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Recipe!</h1>
+        <div class=" w-100 d-flex justify-content-between">
+            <a href="/main">Home</a>
+            <a href="/">Logout</a>
+        </div>
+        <form class="w-50 d-block mx-auto" action="/recipes/submit" method="POST">
+            <label for="name" class="form-label">Name:</label><br>
+            <input name="name" type="text" class="form-control" value="{{one_recipe.name}}">
+
+            <label for="description" class="form-label">Description:</label><br>
+            <input name="description" type="text" class="form-control" value="{{one_recipe.description}}">
+
+            <label for="instructions" class="form-label" >Instructions:</label><br>
+            <textarea name="instructions" type="text" class="form-control" value="{{one_recipe.instructions}}">{{one_recipe.instructions}}</textarea>
+
+            <label for="date_cooked" class="form-label">Date Cooked:</label><br>
+            <input name="date_cooked" type="date" class="form-control" >
+
+            <label class="form-label">Under 30 Min?</label><br>
+            <label for="under_30">Yes</label>
+            <input name="under_30" type="radio" value="{{one_recipe.date_cooked}}">
+            <label for="under_30">No</label>
+            <input name="under_30" type="radio" value="{{one_recipe.date_cooked}}""><br>
+            
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
